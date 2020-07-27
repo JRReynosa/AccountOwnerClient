@@ -1,0 +1,5 @@
+﻿div .navbar-brand a.nav-link, ul li.active {
+    font-weight: bold!important;
+    font-style: italic!important;
+    color: #fff!important;
+}

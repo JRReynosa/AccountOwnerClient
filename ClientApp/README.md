@@ -18,7 +18,12 @@ I had to delete some files because I used VS's React template and it came with a
 
 Navigation and Routing
 =========
+Once again, some files were present and some weren't. Also, being stubborn I chose to use the latest BootStrap version, and so some of the BootStrap components and CSS had to be 
+tweaked.
 
+* React Routing Configuration, BrowserRouter, and Route
+* Navigation Menu
+* Creating the Not-Found Component
 
 HTTP, Axios, and Redux
 =========
