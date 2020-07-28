@@ -1,6 +1,6 @@
 ﻿import React from 'react';
 import './Navigation.css';
-import { Col, Navbar, Nav, NavItem } from 'react-bootstrap';
+import { Col, Navbar, Nav } from 'react-bootstrap';
 
 const navigation = (props) => {
     return (
