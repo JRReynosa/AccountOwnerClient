@@ -34,6 +34,7 @@ HTTP, Axios, and Redux
 The introduction to redux was alright, a little hard to wrap my head around what's going on at a fundamental level.
 
 The following was the content for this part of the series:
+
 * Creating the Axios Instance
 * About Redux in React App
 * Redux – Action Types
@@ -45,6 +46,18 @@ The following was the content for this part of the series:
 
 Error Handling and Additional Components
 =========
+7/29/2020
+Understood redux a little more after this, "implementing redux" was essentially like binding a model to view. I had to change some of the server code to set up the 
+Owner API, I created the model and DBContext & set up the local SQL database. The DB is empty though, so I cannot quite test that the API is working as expected,
+but I'll test it when we get to the POST requests part of the series. I also changed the axios baseUrl port to 44317.
+
+The following was the content for this part of the series:
+
+* OwnerList Component Creation, HOC, and Routes
+* Implementing Redux
+* Creating the Owner Component
+* Displaying Owners Result
+* Lazy Content Loading
 
 Dynamic Form Creation and Modal Components
 =========
