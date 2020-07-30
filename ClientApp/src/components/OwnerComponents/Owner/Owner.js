@@ -19,17 +19,17 @@ const owner = (props) => {
     return (
         <Aux>
             <tr>
-                <td>{props.ownerDocument.name}</td>
+                <td>{props.owner.name}</td>
                 <td><Moment format="DD/MM/YYYY">{props.owner.dateOfBirth}</Moment></td>
                 <td>{props.owner.address}</td>
                 <td>
-                    <Button onClick={() => redirectToOwnerDetails(props.owner.id, props.history)}>Details</Button>
+                    <Button variant="secondary" onClick={() => redirectToOwnerDetails(props.owner.id, props.history)}>Details</Button>
                 </td>
                 <td>
-                    <Button bsStyle="success" onClick={() => redirectToUpdateOwner(props.owner.id, props.history)}>Update</Button>
+                    <Button variant="success" onClick={() => redirectToUpdateOwner(props.owner.id, props.history)}>Update</Button>
                 </td>
                 <td>
-                    <Button bsStyle="danger" onClick={() => redirectToDeleteOwner(props.owner.id, props.history)}>Delete</Button>
+                    <Button variant="danger" onClick={() => redirectToDeleteOwner(props.owner.id, props.history)}>Delete</Button>
                 </td>
             </tr>
         </Aux>

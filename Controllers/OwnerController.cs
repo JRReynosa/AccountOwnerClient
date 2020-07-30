@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using AccountOwnerClient.Data;
 using AccountOwnerClient.Models;
+using Models;
 
 namespace AccountOwnerClient.Controllers
 {
@@ -30,16 +31,25 @@ namespace AccountOwnerClient.Controllers
 
         // GET: api/owner/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Owner>> GetOwner(Guid id)
+        public async Task<ActionResult<OwnerViewModel>> GetOwnerWithDetails(Guid id)
         {
-            var owner = await _context.Owner.FindAsync(id);
+            var owner = await _context.Owner.Where(x => x.Id == id).FirstOrDefaultAsync();
 
             if (owner == null)
             {
                 return NotFound();
             }
 
-            return owner;
+            var vm = new OwnerViewModel
+            {
+                Id = owner.Id,
+                Name = owner.Name,
+                Address = owner.Address,
+                DateOfBirth = owner.DateOfBirth,
+                Accounts = await _context.Account.Where(x => x.OwnerId == owner.Id).ToListAsync()
+            };
+
+            return vm;
         }
 
         // PUT: api/owner/5

@@ -4,6 +4,7 @@ using AccountOwnerClient.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Models;
 
 namespace AccountOwnerClient.Data
 {
@@ -15,5 +16,6 @@ namespace AccountOwnerClient.Data
         }
 
         public DbSet<Owner> Owner { get; set; }
+        public DbSet<Account> Account { get; set; }
     }
 }
