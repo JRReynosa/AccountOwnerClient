@@ -67,8 +67,17 @@ The following was the content for this part of the series:
 * OwnerList Component Modification
 * Implementation of the OwnerDetails Component
 
-Dynamic Form Creation and Modal Components
+Dynamic Form Creation and Modal Components (7/30/2020)
 =========
+This was mostly creating the form/view. I like the use of how I can create a singular modal that can later be populated with any data I want. I was a little confused by the process
+of array of objects to form objects but it makes a little sense. I also had to add ".toDate()" to the datePicker for it to work. Neat stuff.
+
+The following was the content for this part of the series:
+* Success and Error Modal Window Components
+* Creating Input Configuration
+* Creating Input Elements Dynamically
+* CreateOwner Component
+* Finalizing the CreateOwner View
 
 Form Validation and Sending the POST Requests
 =========
