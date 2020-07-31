@@ -30,7 +30,6 @@ const input = (props) => {
             )
             break;
         case 'datePicker':
-            console.log(props.value);
             inputField = (
                 <FormGroup controlId={props.id}>
                     <Col className={FormLabel} sm={2}>

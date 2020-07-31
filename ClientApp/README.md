@@ -79,11 +79,33 @@ The following was the content for this part of the series:
 * CreateOwner Component
 * Finalizing the CreateOwner View
 
-Form Validation and Sending the POST Requests
+Form Validation and Sending the POST Requests (7/31/2020)
 =========
+Simple part of the series, redux is easier to understand now, as well as implementing it. Actually doing the form validation rather than using 
+ASP.NET model validators is very different. However, I do feel like I have much more control over what's going on in my app.
 
-React PUT Requests
+The following was the content for this part of the series:
+
+* Handling OnChange Event with the handleChangeEvent Function
+* Creating Additional Functions for React Form Validation
+* Entire Reactive Form Validation
+* Connect the CreateOwner Component With the Reducer
+* Modifying the Action and the Reducer files
+
+React PUT Requests (7/31/2020)
 =========
+A lot of this series is old. The lifecycle hooks used are deprecated, and I tried looking into the React docs for the best way to update the code
+but it got a little hard for me to wrap my head around. This part of the series was easy and neat considering we simply used components from the 
+last part and implemented redux the same way again.
+
+The following was the content for this part of the series:
+
+* Preparation for the Update Owner Component and the Routing Settings
+* Adding Input Elements, Validation, and Two-Way Binding
+* Connecting the Reducer With the Component
+* Fetching Data From The Server
+* Displaying Data on the Screen
+* Executing the Update Action
 
 React DELETE Requests
 =========
