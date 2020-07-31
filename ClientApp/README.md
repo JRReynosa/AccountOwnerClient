@@ -107,8 +107,13 @@ The following was the content for this part of the series:
 * Displaying Data on the Screen
 * Executing the Update Action
 
-React DELETE Requests
+React DELETE Requests (7/31/2020)
 =========
+Neat series. I'm bugged by the fact that it was old though. Feel like it was good enough for a basic understanding but I have a ways to go.
 
-Series Conclusion
-=========
+The following was the content for this part of the series:
+
+* Preparations for the Delete Owner Component and the Delete Route
+* Connecting Our Component with the Reducer
+* Implementing JSX in the DeleteOwner Component
+* Implementing the Business Logic for the Delete Action
